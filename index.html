@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form 101</title>
+        <style>
+            body {
+                background-color: #55a747;
+            }
+            #formborder {
+                background-color: #66cd54;
+                border: 3px solid whitesmoke;
+            }
+            #parameter {
+                display: flex;
+                width: 660px;
+                height: 220px;
+            }
+            img {
+                display: flex;
+                width: 270px;
+                height: 200px;
+                border: 3px solid whitesmoke;
+            }
+            p {
+                padding: 1%;
+                border: 3px solid whitesmoke;
+                color: whitesmoke;
+                background-color: #66cd54;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                display: flex;
+                margin-left: 10px;            
+            }
+            #checkbox {
+                padding: 2%;
+                width: 200px;
+            }
+            #innertable {
+                padding: 6px;
+            }
+            label {
+                color: whitesmoke;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>
+    <body>
+        <div id="parameter">
+<img src="images/websitepicture.jpg" alt="Exercise" 
+            width="200px">
+            <p><strong>Hey!</strong>
+                <br>Want to be part of a healthy group that prioritizes both physical
+                and even mental health? Join now by filling up the forms below!</p>
+        </div>
+        <form id="formborder">
+            <table>
+                <tr>
+                    <td>
+                        <table id="innertable">
+                            <tr>
+                                <td>
+                                    <label><strong>Name:</strong> </label>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="LN, FN, MI Format" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label><strong>Address</strong> </label>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="House No., Street" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label><strong>Email-Ad:</strong> </label>
+                                </td>
+                                <td>
+                                    <input type="email" placeholder="example@gmail.com" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label><strong>Contact Number:</strong> </label>
+                                </td>
+                                <td>
+                                    <input type="number" placeholder="09000000000" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td id="checkbox">
+                        <label><strong>Gender:</strong> </label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <label><strong>Hobies:</strong> </label><br>
+                        <input type="checkbox" id="hobby1" name="hobby" value="swimming">
+                        <label for="hobby1">Swimming</label><br>
+                        <input type="checkbox" id="hobby2" name="hobby" value="biking">
+                        <label for="hobby2">Biking</label><br>
+                        <input type="checkbox" id="hobby3" name="hobby" value="reading">
+                        <label for="hobby3">Reading</label><br>
+                        <input type="checkbox" id="hobby4" name="hobby" value="watching">
+                        <label for="hobby4">Watching TV</label><br>
+                        <input type="checkbox" id="hobby5" name="hobby" value="playing">
+                        <label for="hobby5">Playing</label><br>
+                    </td>
+                </tr>
+            </table>
+        </form>
